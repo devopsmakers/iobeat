@@ -1,0 +1,301 @@
+{
+	"ImportPath": "github.com/devopsmakers/iobeat",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v79",
+	"Deps": [
+		{
+			"ImportPath": "github.com/Shopify/sarama",
+			"Comment": "v1.11.0-22-g1416bd7",
+			"Rev": "1416bd78f804d523005322194994f08c2a0ad797"
+		},
+		{
+			"ImportPath": "github.com/davecgh/go-spew/spew",
+			"Comment": "v1.1.0",
+			"Rev": "346938d642f2ec3594ed81d874461961cd0faa76"
+		},
+		{
+			"ImportPath": "github.com/eapache/go-resiliency/breaker",
+			"Comment": "v1.0.0-4-gb86b1ec",
+			"Rev": "b86b1ec0dd4209a588dc1285cdd471e73525c0b3"
+		},
+		{
+			"ImportPath": "github.com/eapache/go-xerial-snappy",
+			"Rev": "bb955e01b9346ac19dc29eb16586c90ded99a98c"
+		},
+		{
+			"ImportPath": "github.com/eapache/queue",
+			"Comment": "v1.0.2-7-g44cc805",
+			"Rev": "44cc805cf13205b55f69e14bcb69867d1ae92f98"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/beat",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/cfgfile",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/common",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/common/dtfmt",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/common/fmtstr",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/common/jsontransform",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/common/op",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/common/streambuf",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/logp",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/outputs",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/outputs/console",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/outputs/elasticsearch",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/outputs/fileout",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/outputs/kafka",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/outputs/logstash",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/outputs/mode",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/outputs/mode/lb",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/outputs/mode/modeutil",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/outputs/mode/single",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/outputs/outil",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/outputs/redis",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/outputs/transport",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/paths",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/processors",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/processors/actions",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/processors/add_cloud_metadata",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/publisher",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/libbeat/service",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/metricbeat/schema",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/beats/metricbeat/schema/mapstriface",
+			"Comment": "v5.1.2-17-gc3f9fa59",
+			"Rev": "c3f9fa59581e1467da0e98b356e1fa1d1efa9bee"
+		},
+		{
+			"ImportPath": "github.com/elastic/go-lumber/client/v2",
+			"Comment": "v0.1.0",
+			"Rev": "616041e345fc33c97bc0eb0fa6b388aa07bca3e1"
+		},
+		{
+			"ImportPath": "github.com/elastic/go-lumber/log",
+			"Comment": "v0.1.0",
+			"Rev": "616041e345fc33c97bc0eb0fa6b388aa07bca3e1"
+		},
+		{
+			"ImportPath": "github.com/elastic/go-lumber/protocol/v2",
+			"Comment": "v0.1.0",
+			"Rev": "616041e345fc33c97bc0eb0fa6b388aa07bca3e1"
+		},
+		{
+			"ImportPath": "github.com/elastic/go-ucfg",
+			"Comment": "v0.4.6",
+			"Rev": "ec8488a52542c0c51e42e8ea204dcaff400bc644"
+		},
+		{
+			"ImportPath": "github.com/elastic/go-ucfg/cfgutil",
+			"Comment": "v0.4.6",
+			"Rev": "ec8488a52542c0c51e42e8ea204dcaff400bc644"
+		},
+		{
+			"ImportPath": "github.com/elastic/go-ucfg/flag",
+			"Comment": "v0.4.6",
+			"Rev": "ec8488a52542c0c51e42e8ea204dcaff400bc644"
+		},
+		{
+			"ImportPath": "github.com/elastic/go-ucfg/json",
+			"Comment": "v0.4.6",
+			"Rev": "ec8488a52542c0c51e42e8ea204dcaff400bc644"
+		},
+		{
+			"ImportPath": "github.com/elastic/go-ucfg/yaml",
+			"Comment": "v0.4.6",
+			"Rev": "ec8488a52542c0c51e42e8ea204dcaff400bc644"
+		},
+		{
+			"ImportPath": "github.com/garyburd/redigo/internal",
+			"Comment": "v1.0.0-20-g4854517",
+			"Rev": "48545177e92ae3e7bcdbd50b42f7a139e6a268da"
+		},
+		{
+			"ImportPath": "github.com/garyburd/redigo/redis",
+			"Comment": "v1.0.0-20-g4854517",
+			"Rev": "48545177e92ae3e7bcdbd50b42f7a139e6a268da"
+		},
+		{
+			"ImportPath": "github.com/golang/snappy",
+			"Rev": "553a641470496b2327abcac10b36396bd98e45c9"
+		},
+		{
+			"ImportPath": "github.com/joeshaw/multierror",
+			"Rev": "69b34d4ec901851247ae7e77d33909caf9df99ed"
+		},
+		{
+			"ImportPath": "github.com/klauspost/compress/flate",
+			"Comment": "v1.2.1-1-g461e8fd",
+			"Rev": "461e8fd8397ae84a23f56e385801e4feda2048ce"
+		},
+		{
+			"ImportPath": "github.com/klauspost/compress/zlib",
+			"Comment": "v1.2.1-1-g461e8fd",
+			"Rev": "461e8fd8397ae84a23f56e385801e4feda2048ce"
+		},
+		{
+			"ImportPath": "github.com/klauspost/cpuid",
+			"Comment": "v1.0",
+			"Rev": "09cded8978dc9e80714c4d85b0322337b0a1e5e0"
+		},
+		{
+			"ImportPath": "github.com/klauspost/crc32",
+			"Comment": "v1.1-2-g1bab8b3",
+			"Rev": "1bab8b35b6bb565f92cbc97939610af9369f942a"
+		},
+		{
+			"ImportPath": "github.com/nranchev/go-libGeoIP",
+			"Rev": "c78e8bd2dd3599feb21fd30886043979e82fe948"
+		},
+		{
+			"ImportPath": "github.com/pkg/errors",
+			"Comment": "v0.8.0-2-g248dadf",
+			"Rev": "248dadf4e9068a0b3e79f02ed0a610d935de5302"
+		},
+		{
+			"ImportPath": "github.com/rcrowley/go-metrics",
+			"Rev": "1f30fe9094a513ce4c700b9a54458bbb0c96996c"
+		},
+		{
+			"ImportPath": "github.com/rcrowley/go-metrics/exp",
+			"Rev": "1f30fe9094a513ce4c700b9a54458bbb0c96996c"
+		},
+		{
+			"ImportPath": "github.com/satori/go.uuid",
+			"Comment": "v1.1.0-6-gb061729",
+			"Rev": "b061729afc07e77a8aa4fad0a2fd840958f1942a"
+		},
+		{
+			"ImportPath": "golang.org/x/net/proxy",
+			"Rev": "b4690f45fa1cafc47b1c280c2e75116efe40cc13"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/windows",
+			"Rev": "e24f485414aeafb646f6fca458b0bf869c0880a1"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/windows/svc",
+			"Rev": "e24f485414aeafb646f6fca458b0bf869c0880a1"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/windows/svc/debug",
+			"Rev": "e24f485414aeafb646f6fca458b0bf869c0880a1"
+		},
+		{
+			"ImportPath": "gopkg.in/yaml.v2",
+			"Rev": "a3f3340b5840cee44f372bddb5880fcbc419b46a"
+		}
+	]
+}
