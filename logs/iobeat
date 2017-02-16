@@ -1,0 +1,23 @@
+2017-02-16T14:07:38+08:00 INFO Home path: [/Users/tbirkett/golang/src/github.com/devopsmakers/iobeat] Config path: [/Users/tbirkett/golang/src/github.com/devopsmakers/iobeat] Data path: [/Users/tbirkett/golang/src/github.com/devopsmakers/iobeat/data] Logs path: [/Users/tbirkett/golang/src/github.com/devopsmakers/iobeat/logs]
+2017-02-16T14:07:38+08:00 INFO Setup Beat: iobeat; Version: 5.1.3
+2017-02-16T14:07:38+08:00 INFO Loading template enabled. Reading template file: /Users/tbirkett/golang/src/github.com/devopsmakers/iobeat/iobeat.template.json
+2017-02-16T14:07:38+08:00 INFO Loading template enabled for Elasticsearch 2.x. Reading template file: /Users/tbirkett/golang/src/github.com/devopsmakers/iobeat/iobeat.template-es2x.json
+2017-02-16T14:07:38+08:00 INFO Elasticsearch url: http://localhost:9200
+2017-02-16T14:07:38+08:00 INFO Activated elasticsearch as output plugin.
+2017-02-16T14:07:38+08:00 INFO Publisher name: MBP.local
+2017-02-16T14:07:38+08:00 INFO Flush Interval set to: 1s
+2017-02-16T14:07:38+08:00 INFO Max Bulk Size set to: 50
+2017-02-16T14:07:38+08:00 INFO iobeat start running.
+2017-02-16T14:07:38+08:00 INFO iobeat is running! Hit CTRL-C to stop it.
+2017-02-16T14:07:39+08:00 INFO Event sent
+2017-02-16T14:07:40+08:00 INFO Event sent
+2017-02-16T14:07:40+08:00 ERR Connecting error publishing events (retrying): Get http://localhost:9200: dial tcp 127.0.0.1:9200: getsockopt: connection refused
+2017-02-16T14:07:41+08:00 INFO Event sent
+2017-02-16T14:07:41+08:00 ERR Connecting error publishing events (retrying): Get http://localhost:9200: dial tcp [::1]:9200: getsockopt: connection refused
+2017-02-16T14:07:42+08:00 INFO Event sent
+2017-02-16T14:07:43+08:00 INFO Event sent
+2017-02-16T14:07:43+08:00 ERR Connecting error publishing events (retrying): Get http://localhost:9200: dial tcp [::1]:9200: getsockopt: connection refused
+2017-02-16T14:07:44+08:00 INFO Event sent
+2017-02-16T14:07:44+08:00 INFO Total non-zero values:  libbeat.publisher.published_events=6 libbeat.publisher.messages_in_worker_queues=6
+2017-02-16T14:07:44+08:00 INFO Uptime: 6.085164322s
+2017-02-16T14:07:44+08:00 INFO iobeat stopped.
