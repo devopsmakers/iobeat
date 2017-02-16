@@ -19,20 +19,11 @@ dependencies, run the following command:
 make setup
 ```
 
-It will create a clean git history for each major step. Note that you can always rewrite the history if you wish before pushing your changes.
-
-To push Iobeat in the git repository, run the following commands:
-
-```
-git remote set-url origin https://github.com/devopsmakers/iobeat
-git push origin master
-```
-
 For further development, check out the [beat developer guide](https://www.elastic.co/guide/en/beats/libbeat/current/new-beat.html).
 
 ### Build
 
-To build the binary for Iobeat run the command below. This will generate a binary
+To build the binary for iobeat run the command below. This will generate a binary
 in the same directory with the name iobeat.
 
 ```
@@ -42,7 +33,7 @@ make
 
 ### Run
 
-To run Iobeat with debugging output enabled, run:
+To run iobeat with debugging output enabled, run:
 
 ```
 ./iobeat -c iobeat.yml -e -d "*"
@@ -51,7 +42,7 @@ To run Iobeat with debugging output enabled, run:
 
 ### Test
 
-To test Iobeat, run the following command:
+To test iobeat, run the following command:
 
 ```
 make testsuite
@@ -80,7 +71,7 @@ make update
 
 ### Cleanup
 
-To clean  Iobeat source code, run the following commands:
+To clean iobeat source code, run the following commands:
 
 ```
 make fmt
@@ -96,7 +87,7 @@ make clean
 
 ### Clone
 
-To clone Iobeat from the git repository, run the following commands:
+To clone iobeat from the git repository, run the following commands:
 
 ```
 mkdir -p ${GOPATH}/github.com/devopsmakers
