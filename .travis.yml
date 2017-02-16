@@ -34,8 +34,7 @@ before_install:
   - cd $HOME/gopath/src/github.com/devopsmakers/iobeat/
 
 install:
-  - go get github.com/tools/godep
-  - godep restore
+  - go get ./...
 
 script:
   - make $TARGETS
