@@ -1,6 +1,0 @@
-== Docker Module
-
-experimental[]
-
-This module fetches metrics from https://www.docker.com/[Docker] containers.
-
