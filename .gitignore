@@ -5,3 +5,6 @@
 /iobeat
 /iobeat.test
 *.pyc
+
+# Golang 1.5+ vendor folder
+vendor/

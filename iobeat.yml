@@ -5,6 +5,7 @@
 iobeat:
   # Defines how often an event is sent to the output
   period: 5s
+  # Defines the disks to gather IO stats from. Default: nil = All disks
   disks:
   # - sda
 #================================ General =====================================
