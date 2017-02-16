@@ -1,7 +1,10 @@
 # iobeat
+[![Go Report Card](https://goreportcard.com/badge/github.com/devopsmakers/iobeat)](https://goreportcard.com/report/github.com/devopsmakers/iobeat)
 
-Welcome to iobeat. This beat collects IO statistics from /proc/diskstats on Linux
-and ships them to your configured collectors.
+Welcome to iobeat.
+
+This beat collects IO statistics from /proc/diskstats on Linux and ships them to
+your configured collectors.
 
 Ensure that this folder is at the following location:
 `${GOPATH}/github.com/devopsmakers`
