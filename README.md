@@ -1,7 +1,6 @@
 # iobeat
 [![Build Status](https://travis-ci.org/devopsmakers/iobeat.svg?branch=master)](https://travis-ci.org/devopsmakers/iobeat)
 [![Go Report Card](https://goreportcard.com/badge/github.com/devopsmakers/iobeat)](https://goreportcard.com/report/github.com/devopsmakers/iobeat)
-https://travis-ci.org/devopsmakers/iobeat.svg?branch=master
 
 Welcome to iobeat.
 
