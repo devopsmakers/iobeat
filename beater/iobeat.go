@@ -150,8 +150,8 @@ func MakeEvent(fields []string) common.MapStr {
 
 	event := common.MapStr{
 		"@timestamp": common.Time(time.Now()),
-		"type":       "diskstats",
-		"stats": common.MapStr{
+		"type":       "iobeat",
+		"disk": common.MapStr{
 			"major":               diskioevent.Major,
 			"minor":               diskioevent.Minor,
 			"name":                diskioevent.Name,
