@@ -1,6 +1,7 @@
-# Iobeat
+# iobeat
 
-Welcome to Iobeat.
+Welcome to iobeat. This beat collects IO statistics from /proc/diskstats on Linux
+and ships them to your configured collectors.
 
 Ensure that this folder is at the following location:
 `${GOPATH}/github.com/devopsmakers`
