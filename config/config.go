@@ -7,10 +7,10 @@ import "time"
 
 type Config struct {
 	Period time.Duration `config:"period"`
-	Disks  *[]string `config:"disks"`
+	Disks  *[]string     `config:"disks"`
 }
 
 var DefaultConfig = Config{
 	Period: 1 * time.Second,
-	Disks: nil,
+	Disks:  nil,
 }
