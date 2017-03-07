@@ -1,5 +1,11 @@
-BEATNAME=iobeat
-BEAT_DIR=github.com/devopsmakers/iobeat
+BEAT_NAME=iobeat
+BEAT_PATH=github.com/devopsmakers/iobeat
+BEAT_DESCRIPTION=iobeat is an Elastic Beat that parses IO stats and sends them to ELK.
+BEAT_URL=https://github.com/devopsmakers/iobeat
+BEAT_DOC_URL=https://github.com/devopsmakers/iobeat
+BEAT_LICENSE=ASL 2.0
+BEAT_VENDOR=DevOps Makers
+
 SYSTEM_TESTS=false
 TEST_ENVIRONMENT=false
 ES_BEATS?=./vendor/github.com/elastic/beats
