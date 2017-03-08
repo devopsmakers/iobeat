@@ -58,6 +58,11 @@ before-build:
 .PHONY: collect
 collect:
 
+# Simply runs go test
+.PHONY: test
+test:
+	go test -coverprofile coverage.txt
+
 # Builds i386 iobeat binary
 .PHONY: release/iobeat-linux-386
 release/iobeat-linux-386: $(GO_FILES)
@@ -78,7 +83,7 @@ clean:
 	$(info INFO: Cleaning build $@)
 	rm -rf ./release
 
-.PHONY: release	
+.PHONY: release
 release:
 	$(MAKE) clean
 	$(MAKE) build

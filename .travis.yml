@@ -13,8 +13,8 @@ os:
 
 env:
   matrix:
+    - TARGETS="test"
     - TARGETS="build"
-    - TARGETS="clean"
 
   global:
     # Cross-compile for amd64 only to speed up testing.

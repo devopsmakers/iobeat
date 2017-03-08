@@ -8,3 +8,5 @@
 
 # Golang 1.5+ vendor folder
 vendor/
+
+coverage.txt
