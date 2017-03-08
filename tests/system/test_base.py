@@ -2,6 +2,7 @@ from iobeat import BaseTest
 
 import os
 
+
 class Test(BaseTest):
 
     def test_base(self):
