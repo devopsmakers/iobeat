@@ -1,6 +1,8 @@
 /.idea
 /build
 
+_meta/
+
 .DS_Store
 /iobeat
 /iobeat.test

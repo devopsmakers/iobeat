@@ -58,32 +58,3 @@ before-build:
 .PHONY: collect
 collect:
 
-# Simply runs go test
-.PHONY: test
-test:
-	go test -coverprofile coverage.txt
-
-# Builds i386 iobeat binary
-.PHONY: release/iobeat-linux-386
-release/iobeat-linux-386: $(GO_FILES)
-	$(info INFO: Starting build $@)
-	CGO_ENABLED=0 GOOS=linux GOARCH=386 go build -ldflags "-X main.version=$(TRAVIS_TAG) -s -w" -o release/$(cmd)-linux-386 $(exe)
-
-# Builds amd64 iobeat binary
-.PHONY: release/iobeat-linux-amd64
-release/iobeat-linux-amd64: $(GO_FILES)
-	$(info INFO: Starting build $@)
-	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags "-X main.version=$(TRAVIS_TAG) -s -w" -o release/$(cmd)-linux-amd64 $(exe)
-
-.PHONY: build
-build: release/iobeat-linux-386 release/iobeat-linux-amd64
-
-.PHONY: clean
-clean:
-	$(info INFO: Cleaning build $@)
-	rm -rf ./release
-
-.PHONY: release
-release:
-	$(MAKE) clean
-	$(MAKE) build
