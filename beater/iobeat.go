@@ -40,7 +40,7 @@ type DiskStats struct {
 	MsecWeightedTotal uint64 // Measure of recent I/O completion time and backlog.
 }
 
-// Creates beater
+// New - Creates beater
 func New(b *beat.Beat, cfg *common.Config) (beat.Beater, error) {
 	config := config.DefaultConfig
 	if err := cfg.Unpack(&config); err != nil {
@@ -54,6 +54,7 @@ func New(b *beat.Beat, cfg *common.Config) (beat.Beater, error) {
 	return bt, nil
 }
 
+// Run - Gathers and sends stats
 func (bt *Iobeat) Run(b *beat.Beat) error {
 	logp.Info("iobeat is running! Hit CTRL-C to stop it.")
 
@@ -67,7 +68,7 @@ func (bt *Iobeat) Run(b *beat.Beat) error {
 		case <-ticker.C:
 		}
 
-		events, err := bt.CollectIOStats()
+		events, err := bt.CollectIOStats("/proc/diskstats")
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -79,11 +80,12 @@ func (bt *Iobeat) Run(b *beat.Beat) error {
 	}
 }
 
-func (bt *Iobeat) CollectIOStats() ([]common.MapStr, error) {
+// CollectIOStats - Collects from the specified file
+func (bt *Iobeat) CollectIOStats(statfile string) ([]common.MapStr, error) {
 
 	events := make([]common.MapStr, 0)
 
-	if diskstats, err := os.Open("/proc/diskstats"); err == nil {
+	if diskstats, err := os.Open(statfile); err == nil {
 		defer diskstats.Close()
 		diskscan := bufio.NewScanner(diskstats)
 
@@ -172,6 +174,7 @@ func MakeEvent(fields []string) common.MapStr {
 	return event
 }
 
+// Stop - Cleanup on exit
 func (bt *Iobeat) Stop() {
 	bt.client.Close()
 	close(bt.done)
