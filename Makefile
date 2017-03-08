@@ -1,3 +1,5 @@
+export GO15VENDOREXPERIMENT=1
+
 BEAT_NAME=iobeat
 BEAT_PATH=github.com/devopsmakers/iobeat
 BEAT_DESCRIPTION=iobeat is an Elastic Beat that parses IO stats and sends them to ELK.
@@ -11,6 +13,12 @@ TEST_ENVIRONMENT=false
 ES_BEATS?=./vendor/github.com/elastic/beats
 GOPACKAGES=$(shell glide novendor)
 PREFIX?=.
+
+TRAVIS_TAG ?= "0.0.0"
+GO_FILES = $(shell find . \( -path ./vendor -o -name '_test.go' \) -prune -o -name '*.go' -print)
+
+exe = github.com/devopsmakers/iobeat
+cmd = iobeat
 
 # Path to the libbeat Makefile
 -include $(ES_BEATS)/libbeat/scripts/Makefile
@@ -49,3 +57,28 @@ before-build:
 # Collects all dependencies and then calls update
 .PHONY: collect
 collect:
+
+# Builds i386 iobeat binary
+.PHONY: release/iobeat-linux-386
+release/iobeat-linux-386: $(GO_FILES)
+	$(info INFO: Starting build $@)
+	CGO_ENABLED=0 GOOS=linux GOARCH=386 go build -ldflags "-X main.version=$(TRAVIS_TAG) -s -w" -o release/$(cmd)-linux-386 $(exe)
+
+# Builds amd64 iobeat binary
+.PHONY: release/iobeat-linux-amd64
+release/iobeat-linux-amd64: $(GO_FILES)
+	$(info INFO: Starting build $@)
+	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags "-X main.version=$(TRAVIS_TAG) -s -w" -o release/$(cmd)-linux-amd64 $(exe)
+
+.PHONY: build
+build: release/iobeat-linux-386 release/iobeat-linux-amd64
+
+.PHONY: clean
+clean:
+	$(info INFO: Cleaning build $@)
+	rm -rf ./release
+
+.PHONY: release	
+release:
+	$(MAKE) clean
+	$(MAKE) build

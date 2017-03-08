@@ -1,7 +1,10 @@
 {
 	"ImportPath": "github.com/devopsmakers/iobeat",
-	"GoVersion": "go1.7",
+	"GoVersion": "go1.8",
 	"GodepVersion": "v79",
+	"Packages": [
+		"./..."
+	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/Shopify/sarama",
@@ -208,6 +211,11 @@
 			"Rev": "ec8488a52542c0c51e42e8ea204dcaff400bc644"
 		},
 		{
+			"ImportPath": "github.com/elastic/go-ucfg/internal/parse",
+			"Comment": "v0.4.6",
+			"Rev": "ec8488a52542c0c51e42e8ea204dcaff400bc644"
+		},
+		{
 			"ImportPath": "github.com/elastic/go-ucfg/json",
 			"Comment": "v0.4.6",
 			"Rev": "ec8488a52542c0c51e42e8ea204dcaff400bc644"
@@ -258,6 +266,15 @@
 		{
 			"ImportPath": "github.com/nranchev/go-libGeoIP",
 			"Rev": "c78e8bd2dd3599feb21fd30886043979e82fe948"
+		},
+		{
+			"ImportPath": "github.com/pierrec/lz4",
+			"Rev": "5c9560bfa9ace2bf86080bf40d46b34ae44604df"
+		},
+		{
+			"ImportPath": "github.com/pierrec/xxHash/xxHash32",
+			"Comment": "v0.1-4-g5a00444",
+			"Rev": "5a004441f897722c627870a981d02b29924215fa"
 		},
 		{
 			"ImportPath": "github.com/pkg/errors",
