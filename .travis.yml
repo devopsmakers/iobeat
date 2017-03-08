@@ -35,6 +35,7 @@ before_install:
 install:
   - go get ./...
   - go get github.com/elastic/beats/libbeat
+  - make setup
 
 script:
   - make $TARGETS
