@@ -33,8 +33,9 @@ before_install:
   - cd $HOME/gopath/src/github.com/devopsmakers/iobeat/
 
 install:
-  - go get ./...
+  - go get github.com/Masterminds/glide
   - go get github.com/elastic/beats/libbeat
+  - go get ./...
   - make setup
 
 script:
